@@ -15,7 +15,6 @@ const chart = ({ symbol }) => {
         "calendar": false,
         "studies": [
             "STD;EMA",
-            "STD;RSI",
         ],
         "hide_volume": true,
         "support_host": "https://www.tradingview.com"
