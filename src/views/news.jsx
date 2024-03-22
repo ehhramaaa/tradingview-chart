@@ -8,7 +8,7 @@ import moment from 'moment-timezone';
 
 const news = () => {
     const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
-    const API_URL = 'https://cryptopanic.com/api/v1/posts/?auth_token=b2836a03c4d77383217ca76b56f2202ae131b424&public=true&panic_score=true';
+    const API_URL = "https://cryptopanic.com/api/v1/posts/?auth_token=b2836a03c4d77383217ca76b56f2202ae131b424&public=true&panic_score=true";
 
     const [posts, setPosts] = useState([]);
 
