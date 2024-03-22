@@ -11,7 +11,7 @@ const screener = () => {
         "market": "crypto",
         "showToolbar": true,
         "colorTheme": "dark",
-        "locale": "id",
+        "locale": "eng",
         "isTransparent": false
     }
 
