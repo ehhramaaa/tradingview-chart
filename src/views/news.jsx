@@ -7,7 +7,7 @@ import moment from 'moment-timezone';
 
 
 const news = () => {
-    const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+    // const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
     const API_URL = "https://cryptopanic.com/api/v1/posts/?auth_token=b2836a03c4d77383217ca76b56f2202ae131b424&public=true&panic_score=true";
 
     const [posts, setPosts] = useState([]);
@@ -15,7 +15,8 @@ const news = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await axios.get(CORS_PROXY_URL + API_URL);
+                // const response = await axios.get(CORS_PROXY_URL + API_URL);
+                const response = await axios.get(API_URL);
                 setPosts(response.data.results);
             } catch (error) {
                 console.error(error);
